@@ -1,0 +1,18 @@
+version: '3.6'
+
+services: 
+  jupyterlab:
+    build: .
+    ipc: host
+    ports: 
+      - 8888:8888
+    volumes: 
+      - ./app:/app
+    deploy:
+      resources: 
+        reservations:
+          devices: 
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
