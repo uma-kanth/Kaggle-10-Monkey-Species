@@ -8,6 +8,7 @@ services:
       - 8888:8888
     volumes: 
       - ./app:/app
+      - ./data:/app/data
     deploy:
       resources: 
         reservations:
