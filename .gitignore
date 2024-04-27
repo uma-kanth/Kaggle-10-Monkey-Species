@@ -56,3 +56,5 @@ data.zip
 app/.ipynb_checkpoints
 
 app/.Trash-0/
+app/model_best_checkpoint.pth.tar
+app/best_model.pth
