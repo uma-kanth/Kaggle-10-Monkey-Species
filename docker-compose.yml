@@ -11,6 +11,9 @@ services:
       - ./data:/app/data
     deploy:
       resources: 
+        limits: 
+          cpus: '4'
+          memory: 4096M
         reservations:
           devices: 
             - driver: nvidia
